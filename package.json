@@ -1,0 +1,34 @@
+{
+  "name": "html-editor",
+  "version": "1.0.0",
+  "description": "Live Html Editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "ovent.core.htmleditor",
+    "productName": "Live Html Editor",
+    "fileAssociations" :{
+      "ext":"html",
+      "name":"HTML"
+    },
+    "nsis":{
+      "perMachine" : true
+    },
+    "win": {
+      "target": "nsis",
+      "icon":"./ressources/icon.ico"
+    }
+  },
+  "author": "Ovent",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^17.1.1",
+    "electron": "^1.6.6"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.8.3"
+  }
+}

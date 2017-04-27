@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real-time HTML Editor</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<script>
+    // require node modules before loader.js comes in
+		var path = require('path');
+</script>
+<frameset resizable="yes" cols="50%,*">
+    <frame name="editbox" src="editor.html" onload="bindEvent();">
+    <frame name="dynamicframe" src="javascript:'';">
+</frameset>
+
+</html>
